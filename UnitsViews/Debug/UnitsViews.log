@@ -1,11 +1,4 @@
-﻿  Unit.cpp
-C:\Users\79538\source\repos\UnitsViews\UnitsViews\Unit.cpp(13,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\79538\source\repos\UnitsViews\UnitsViews\Unit.cpp(23,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  main.cpp
-C:\Users\79538\source\repos\UnitsViews\UnitsViews\HashTable.h(29,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\79538\source\repos\UnitsViews\UnitsViews\HashTable.h(25): message : while compiling class template member function 'int HashTable<10>::NeighboursCount(Unit *)'
-C:\Users\79538\source\repos\UnitsViews\UnitsViews\main.cpp(41): message : see reference to function template instantiation 'int HashTable<10>::NeighboursCount(Unit *)' being compiled
-C:\Users\79538\source\repos\UnitsViews\UnitsViews\main.cpp(20): message : see reference to class template instantiation 'HashTable<10>' being compiled
-C:\Users\79538\source\repos\UnitsViews\UnitsViews\HashTable.h(31,22): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+﻿  main.cpp
+C:\Users\79538\source\repos\UnitsViews\UnitsViews\HashTable.h(32,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\79538\source\repos\UnitsViews\UnitsViews\HashTable.h(34,22): warning C4018: '<': signed/unsigned mismatch
   UnitsViews.vcxproj -> C:\Users\79538\source\repos\UnitsViews\Debug\UnitsViews.exe

@@ -4,12 +4,15 @@
 #include "Index2D.h"
 #include "Unit.h"
 
-template<int N>
 struct HashTable {
-	std::vector<Unit*> units[N][N];
+	std::vector<Unit*>** units;
+	int N;
 
-	HashTable() {
+	HashTable(int N) {
+		this->N = N;
+		units = new std::vector<Unit*>*[N];
 		for (int i = 0; i < N; i++) {
+			units[i] = new std::vector<Unit*>[N];
 			for (int j = 0; j < N; j++) {
 				units[i][j] = {};
 			}

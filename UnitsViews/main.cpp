@@ -15,9 +15,9 @@ int main() {
 	std::cout << "Type units count." << std::endl;
 	int n = 1;
 	std::cin >> n;
+	int* a = new int[n];
 	std::vector<Unit*> units = {};
-	const int N = n;
-	HashTable<10> hashTable = HashTable<10>::HashTable();
+	HashTable* hashTable = new HashTable(n);
 	for (int i = 0; i < n; i++) {
 		float pos_x = 0;
 		float pos_y = 0;
@@ -33,12 +33,11 @@ int main() {
 		std::cin >> dir_y;
 		Unit* unit = new Unit(pos_x, pos_y, dir_x, dir_y);
 		units.push_back(unit);
-		Index2D index = hashTable.AddUnit(unit);
-		std::cout << "( " << index.i << " ; " << index.j << " )" << std::endl;
+		Index2D index = hashTable->AddUnit(unit);
 	}
 
 	for (int i = 0; i < n; i++) {
-		int count = hashTable.NeighboursCount(units[i]);
+		int count = hashTable->NeighboursCount(units[i]);
 		std::cout << "Unit " << i << " sees " << count << " units." << std::endl;
 	}
 	return 0;
